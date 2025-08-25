@@ -33,13 +33,13 @@ export default function HeroSection() {
           {/* Buttons */}
           <div className="flex gap-4 justify-center lg:justify-start mt-4">
             <Link to="projects" smooth={true} duration={500}
-              className="px-6 py-3 rounded-full bg-blue text-light font-semibold shadow-md hover:scale-105 transition cursor-pointer"
+              className="px-6 py-3 rounded-full bg-blue text-light font-semibold shadow-md transition transform hover:scale-105 cursor-pointer"
             >
               View Projects
             </Link>
             <Link to="contact" smooth={true} duration={500}>
               <button
-                className={`px-9 py-3 rounded-full font-semibold shadow-md hover:scale-105 transition cursor-pointer
+                className={`px-9 py-3 rounded-full font-semibold shadow-md transition transform hover:scale-105 cursor-pointer
                                 ${theme === "dark"
                     ? "bg-light text-dark"
                     : "bg-dark text-light"

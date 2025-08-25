@@ -134,7 +134,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className={`flex items-center justify-center gap-2 px-8 py-3 rounded-full shadow-lg transition font-semibold cursor-pointer transform hover:scale-105 ${theme === "dark"
+                className={`flex items-center justify-center gap-2 px-8 py-3 rounded-full shadow-lg font-semibold cursor-pointer transition transform hover:scale-105 ${theme === "dark"
                   ? "bg-blue text-light hover:bg-blue-700"
                   : "bg-blue text-white hover:bg-blue-700"
                   } ${loading ? "opacity-70 cursor-not-allowed" : ""}`}

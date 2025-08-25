@@ -84,7 +84,7 @@ export default function AboutUs() {
                 to={MyCV}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`px-6 py-2 lg:py-3 rounded-full shadow transition font-semibold cursor-pointer ${theme === "dark"
+                className={`px-6 py-2 lg:py-3 rounded-full shadow transition transform hover:scale-105 font-semibold cursor-pointer ${theme === "dark"
                   ? "bg-blue text-light hover:bg-blue-700"
                   : "bg-blue text-white hover:bg-blue-700"
                   }`}
