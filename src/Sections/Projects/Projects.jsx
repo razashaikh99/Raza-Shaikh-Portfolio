@@ -2,35 +2,37 @@ import { useContext, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { FiExternalLink } from "react-icons/fi"; // 👈 Live Demo ke liye icon
 import { FaGithub } from "react-icons/fa"; // 👈 GitHub ke liye icon
-import Project01 from "../../assets/images/project-01.png";
+import NewHomeProject from "../../assets/images/project-01.png";
+import QuizProject from "../../assets/images/react-quiz-project.png";
+import TicketProject from "../../assets/images/ticket-app.png";
 
 const projects = [
   {
     id: 1,
-    title: "Currency Converter App",
-    description: "A modern currency converter app with real-time exchange rates.",
-    img: Project01,
-    tech: ["React", "Bootstrap", "MongoDB"],
-    demoLink: "#",
-    codeLink: "#",
+    title: "React Quiz App",
+    description: "A dynamic quiz application built with React where users can answer multiple-choice questions and get instant feedback.",
+    img: QuizProject,
+    tech: ["React", "Tailwind Css", "JavaScript"],
+    demoLink: "https://react-quiz-app-kohl.vercel.app/",
+    codeLink: "https://github.com/razashaikh99/React-Quiz-App",
   },
   {
     id: 2,
-    title: "EventSphere",
-    description: "A complete event management solution with booking and scheduling.",
-    img: Project01,
-    tech: ["React", "Bootstrap", "Node.js"],
-    demoLink: "#",
-    codeLink: "#",
+    title: "Ticket Crud App",
+    description: "A ticket booking assignment using MockAPI as backend simulation. Users can create, view, update, and delete tickets seamlessly.",
+    img: TicketProject,
+    tech: ["React", "Bootstrap", "MockApi"],
+    demoLink: "https://mockapi-ticket-grand-assignment.vercel.app/",
+    codeLink: "https://github.com/razashaikh99/Mockapi-Ticket-Grand-Assignment",
   },
   {
     id: 3,
-    title: "Real Estate Website",
+    title: "New Home - Real Estate",
     description: "A responsive real estate platform showcasing property listings.",
-    img: Project01,
-    tech: ["React", "Bootstrap", "Firebase"],
-    demoLink: "#",
-    codeLink: "#",
+    img: NewHomeProject,
+    tech: ["React", "Tailwind Css"],
+    demoLink: "https://new-home-ui-tailwind.vercel.app/",
+    codeLink: "https://github.com/razashaikh99/New-Home-UI-Tailwind",
   },
   {
     id: 4,
