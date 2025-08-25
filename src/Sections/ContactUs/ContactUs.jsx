@@ -31,6 +31,7 @@ export default function Contact() {
             <div className="relative">
               <FaUser className="absolute top-1/2 left-4 -translate-y-1/2 text-gray-400" />
               <input
+                data-aos="fade-right"
                 type="text"
                 placeholder="Your Name"
                 className={`w-full pl-12 pr-4 py-3 rounded-xl border focus:outline-none focus:ring-2 transition ${theme === "dark"
@@ -44,6 +45,7 @@ export default function Contact() {
             <div className="relative">
               <FaEnvelope className="absolute top-1/2 left-4 -translate-y-1/2 text-gray-400" />
               <input
+                data-aos="fade-right"
                 type="email"
                 placeholder="Your Email"
                 className={`w-full pl-12 pr-4 py-3 rounded-xl border focus:outline-none focus:ring-2 transition ${theme === "dark"
@@ -57,6 +59,7 @@ export default function Contact() {
             <div className="relative">
               <FaTag className="absolute top-1/2 left-4 -translate-y-1/2 text-gray-400" />
               <input
+                data-aos="fade-right"
                 type="text"
                 placeholder="Subject"
                 className={`w-full pl-12 pr-4 py-3 rounded-xl border focus:outline-none focus:ring-2 transition ${theme === "dark"
@@ -70,6 +73,7 @@ export default function Contact() {
             <div className="relative">
               <FaCommentDots className="absolute top-5 left-4 text-gray-400" />
               <textarea
+                data-aos="fade-right"
                 rows="5"
                 placeholder="Your Message"
                 className={`w-full pl-12 pr-4 py-3 rounded-xl border focus:outline-none focus:ring-2 transition ${theme === "dark"
