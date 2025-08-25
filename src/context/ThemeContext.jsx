@@ -5,7 +5,7 @@ export const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState("dark");
 
-    // LocalStorage se theme load karo
+    // LocalStorage se theme load ho 
     useEffect(() => {
         const savedTheme = localStorage.getItem("theme");
         if (savedTheme) {
@@ -13,7 +13,7 @@ export const ThemeProvider = ({ children }) => {
         }
     }, []);
 
-    // Theme change hote hi document aur localStorage update
+    // Theme change hote hi document aur localStorage me update
     useEffect(() => {
         document.documentElement.classList.remove("light", "dark");
         document.documentElement.classList.add(theme);

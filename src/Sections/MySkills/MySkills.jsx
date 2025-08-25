@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { FaHtml5, FaBootstrap, FaNode, FaReact } from "react-icons/fa";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
@@ -8,7 +8,7 @@ import { SiMongodb } from "react-icons/si";
 export default function MySkills() {
   const { theme } = useContext(ThemeContext);
 
-  // skills array
+  // Skills Array
   const skills = [
     { name: "HTML", icon: <FaHtml5 size={44} color="#E34F26" /> },
     { name: "CSS", icon: <IoLogoCss3 size={44} color="#2D53E5" /> },

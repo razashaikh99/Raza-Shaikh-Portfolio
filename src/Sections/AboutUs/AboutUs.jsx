@@ -1,4 +1,3 @@
-import React, { useContext } from "react";
 import MyPhoto from "../../assets/images/raza-shaikh3.jpg";
 import { ThemeContext } from "../../context/ThemeContext";
 import { MdEmail } from "react-icons/md";
@@ -6,6 +5,7 @@ import { IoPersonSharp } from "react-icons/io5";
 import { FaGithub, FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
 
 export default function AboutUs() {
   const { theme } = useContext(ThemeContext);

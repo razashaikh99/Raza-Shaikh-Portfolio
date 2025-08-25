@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import MyPhoto from "../../assets/images/raza-shaikh3.jpg";
 import { ThemeContext } from "../../context/ThemeContext";
 import { Link } from "react-scroll";
@@ -12,7 +12,7 @@ export default function HeroSection() {
         ${theme === "dark" ? "bg-[#0C0B11] text-light" : "bg-light text-dark"}
       `}
     >
-      {/* Container without side padding/margin */}
+      {/* Container */}
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-8">
 
         {/* Left Section */}

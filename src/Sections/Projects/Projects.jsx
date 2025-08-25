@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { FiExternalLink } from "react-icons/fi"; // 👈 Live Demo ke liye icon
 import { FaGithub } from "react-icons/fa"; // 👈 GitHub ke liye icon

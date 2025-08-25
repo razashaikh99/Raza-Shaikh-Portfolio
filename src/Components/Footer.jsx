@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import DarkLogo from "../assets/images/dark-logo.png";
 import LightLogo from "../assets/images/light-logo.png";
 import { ThemeContext } from "../context/ThemeContext";
-// import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
 
 export default function Footer() {

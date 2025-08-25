@@ -11,7 +11,7 @@ export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const { theme } = useContext(ThemeContext);
 
-    // Screen resize hone pe menu close karo
+    // Screen resize hone pe menu close ho
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth >= 768) {
@@ -25,7 +25,8 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`px-5 sm:px-10 md:20 lg:px-35 fixed top-0 left-0 z-50 w-full h-16 lg:h-20 flex justify-between items-center transition-colors duration-300 shadow-lg ${theme === "dark" ? "bg-bg-dark" : "bg-bg-light"}`}
+            className={`px-5 sm:px-10 md:20 lg:px-35 fixed top-0 left-0 z-50 w-full h-16 lg:h-20 flex justify-between items-center transition-colors duration-300 shadow-lg 
+            ${theme === "dark" ? "bg-bg-dark" : "bg-bg-light"}`}
         >
             {/* Logo */}
             <Link to="#" smooth={true} duration={500} className="hover:text-blue-400 transition cursor-pointer">

@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from '../Components/Navbar'
 import HeroSection from '../Sections/HeroSection/HeroSection'
 import AboutUs from '../Sections/AboutUs/AboutUs'
@@ -9,7 +8,7 @@ import Footer from '../Components/Footer'
 
 export default function Home() {
   return (
-    <div className=''>
+    <div>
       <Navbar />
       <HeroSection />
       <AboutUs />
