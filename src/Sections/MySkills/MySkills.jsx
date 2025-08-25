@@ -36,7 +36,7 @@ export default function MySkills() {
       </div>
 
       {/* Skills Grid */}
-      <div className="pb-20 pt-10 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-8 place-items-center">
+      <div data-aos="zoom-in" className="pb-20 pt-10 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-8 place-items-center">
         {skills.map((skill, index) => (
           <div
             key={index}

@@ -16,7 +16,7 @@ export default function HeroSection() {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-8">
 
         {/* Left Section */}
-        <div className="flex-1 flex flex-col gap-5 text-center lg:text-left px-0">
+        <div data-aos="fade-right" className="flex-1 flex flex-col gap-5 text-center lg:text-left px-0">
           <p className="text-lg opacity-80">👋 Hello there...</p>
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
             I’m <span className="text-blue">Raza Shaikh</span>
@@ -52,7 +52,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right Section (Image) */}
-        <div className="flex justify-center">
+        <div data-aos="flip-right" className="flex justify-center">
           <img
             src={MyPhoto}
             alt="Raza Shaikh"

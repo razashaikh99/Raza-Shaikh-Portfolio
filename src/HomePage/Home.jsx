@@ -5,8 +5,18 @@ import MySkills from '../Sections/MySkills/MySkills'
 import Projects from '../Sections/Projects/Projects'
 import Contact from '../Sections/ContactUs/ContactUs'
 import Footer from '../Components/Footer'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200
+    });
+  }, [])
+
   return (
     <div>
       <Navbar />

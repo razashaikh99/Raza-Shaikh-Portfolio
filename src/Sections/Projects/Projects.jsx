@@ -76,7 +76,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="pt-5 grid md:grid-cols-3 gap-8">
+        <div data-aos="fade-up" className="pt-5 grid md:grid-cols-3 gap-8">
           {visibleProjects.map((project) => (
             <div
               key={project.id}
