@@ -18,10 +18,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_8ddyk1e",       // ✅ Service ID
-        "template_v35wg1b",      // ✅ Template ID
+        "service_8ddyk1e",       // Service ID
+        "template_v35wg1b",      // Template ID
         form.current,
-        "chQTtwLKOOMCQP0AO"      // ✅ Public Key
+        "chQTtwLKOOMCQP0AO"      // Public Key
       )
       .then(
         () => {
@@ -59,7 +59,7 @@ export default function Contact() {
         {/* Contact Card */}
         <div
           className={`rounded-2xl shadow-xl p-6 sm:p-8 transition duration-500 ${theme === "dark"
-            ? "bg-[#111] border border-gray-700"
+            ? "bg-bg-dark border border-gray-700"
             : "bg-white border border-gray-200"
             }`}
         >
@@ -75,8 +75,8 @@ export default function Contact() {
                 placeholder="Your Name"
                 required
                 className={`w-full pl-11 pr-4 py-3 rounded-xl border text-sm sm:text-base focus:outline-none focus:ring-2 transition ${theme === "dark"
-                  ? "bg-[#1a1a1a] border-gray-700 text-white placeholder-gray-400 focus:ring-blue"
-                  : "bg-gray-50 border-gray-300 text-black placeholder-gray-500 focus:ring-blue"
+                  ? "bg-dark border-gray-700 text-white placeholder-gray-400 focus:ring-blue"
+                  : "bg-gray-50 border-gray-300 text-bg-dark placeholder-gray-500 focus:ring-blue"
                   }`}
               />
             </div>
@@ -91,8 +91,8 @@ export default function Contact() {
                 placeholder="Your Email"
                 required
                 className={`w-full pl-11 pr-4 py-3 rounded-xl border text-sm sm:text-base focus:outline-none focus:ring-2 transition ${theme === "dark"
-                  ? "bg-[#1a1a1a] border-gray-700 text-white placeholder-gray-400 focus:ring-blue"
-                  : "bg-gray-50 border-gray-300 text-black placeholder-gray-500 focus:ring-blue"
+                  ? "bg-dark border-gray-700 text-white placeholder-gray-400 focus:ring-blue"
+                  : "bg-gray-50 border-gray-300 text-bg-dark placeholder-gray-500 focus:ring-blue"
                   }`}
               />
             </div>
@@ -107,8 +107,8 @@ export default function Contact() {
                 placeholder="Subject"
                 required
                 className={`w-full pl-11 pr-4 py-3 rounded-xl border text-sm sm:text-base focus:outline-none focus:ring-2 transition ${theme === "dark"
-                  ? "bg-[#1a1a1a] border-gray-700 text-white placeholder-gray-400 focus:ring-blue"
-                  : "bg-gray-50 border-gray-300 text-black placeholder-gray-500 focus:ring-blue"
+                  ? "bg-dark border-gray-700 text-white placeholder-gray-400 focus:ring-blue"
+                  : "bg-gray-50 border-gray-300 text-bg-dark placeholder-gray-500 focus:ring-blue"
                   }`}
               />
             </div>}
@@ -118,13 +118,13 @@ export default function Contact() {
               <FaCommentDots className="absolute top-4 left-4 text-gray-400 text-sm sm:text-base" />
               <textarea
                 data-aos="fade-up"
-                name="message"   // ✅ must match template
+                name="message"
                 rows="5"
                 placeholder="Your Message"
                 required
                 className={`w-full pl-11 pr-4 py-3 rounded-xl border text-sm sm:text-base focus:outline-none focus:ring-2 transition ${theme === "dark"
-                  ? "bg-[#1a1a1a] border-gray-700 text-white placeholder-gray-400 focus:ring-blue"
-                  : "bg-gray-50 border-gray-300 text-black placeholder-gray-500 focus:ring-blue"
+                  ? "bg-dark border-gray-700 text-white placeholder-gray-400 focus:ring-blue"
+                  : "bg-gray-50 border-gray-300 text-bg-dark placeholder-gray-500 focus:ring-blue"
                   }`}
               ></textarea>
             </div>
