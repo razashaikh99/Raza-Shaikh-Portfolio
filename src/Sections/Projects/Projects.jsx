@@ -76,11 +76,9 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="pt-5 grid md:grid-cols-3 gap-8">
+        <div data-aos="fade-up" className="pt-5 grid md:grid-cols-3 gap-8">
           {visibleProjects.map((project) => (
             <div
-              data-aos="fade-up"
-              data-aos-duration="3000"
               key={project.id}
               className={`rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform ${theme === "dark"
                 ? "bg-dark border border-gray-700"

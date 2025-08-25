@@ -8,6 +8,7 @@ import Footer from '../Components/Footer'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScrollToTop from '../Components/ScrollToTop'
 
 export default function Home() {
 
@@ -26,6 +27,7 @@ export default function Home() {
       <Projects />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }

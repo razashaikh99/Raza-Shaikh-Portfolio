@@ -14,10 +14,10 @@ export default function MySkills() {
     { name: "CSS", icon: <IoLogoCss3 size={44} color="#2D53E5" /> },
     { name: "JavaScript", icon: <IoLogoJavascript size={44} color="#F7DF1E" /> },
     { name: "Bootstrap", icon: <FaBootstrap size={44} color="#8913FC" /> },
+    { name: "React.js", icon: <FaReact size={44} color="#08D9FF" /> },
     { name: "Tailwind CSS", icon: <RiTailwindCssFill size={44} color="#38BDF8" /> },
     { name: "MongoDB", icon: <SiMongodb size={44} color="#55AD47" /> },
     { name: "Node.js", icon: <FaNode size={44} color="#58A149" /> },
-    { name: "React.js", icon: <FaReact size={44} color="#08D9FF" /> },
   ];
 
   return (
