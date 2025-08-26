@@ -30,7 +30,7 @@ const projects = [
     title: "New Home - Real Estate",
     description: "A responsive real estate platform showcasing property listings.",
     img: NewHomeProject,
-    tech: ["React", "Tailwind Css"],
+    tech: ["React", "Tailwind Css", "AOS Animation"],
     demoLink: "https://new-home-ui-tailwind.vercel.app/",
     codeLink: "https://github.com/razashaikh99/New-Home-UI-Tailwind",
   },
