@@ -29,7 +29,7 @@ export default function Navbar() {
             ${theme === "dark" ? "bg-bg-dark" : "bg-bg-light"}`}
         >
             {/* Logo */}
-            <Link to="#" smooth={true} duration={500} className="hover:text-blue-400 transition cursor-pointer">
+            <Link to="hero" smooth={true} duration={500} className="hover:text-blue-400 transition cursor-pointer">
                 <img
                     className="w-40 md:w-48 lg:w-55"
                     src={theme === "dark" ? DarkLogo : LightLogo}
@@ -40,7 +40,9 @@ export default function Navbar() {
             {/* Desktop Menu */}
             <div className="hidden md:flex gap-3 items-center">
                 <ThemeToggle />
-                <Link to="https://github.com/razashaikh99" target="_blank">
+
+                {/* ✅ GitHub external link */}
+                <a href="https://github.com/razashaikh99" target="_blank" rel="noopener noreferrer">
                     <button
                         className={`w-12 h-12 flex items-center justify-center font-bold rounded-full cursor-pointer text-lg transition-colors duration-300 hover:scale-105 ${theme === "dark"
                             ? "bg-light text-dark"
@@ -49,11 +51,13 @@ export default function Navbar() {
                     >
                         <FaGithub size={28} />
                     </button>
-                </Link>
+                </a>
+
+                {/* ✅ Contact button (scroll to section) */}
                 <Link to="contact" smooth={true} duration={500}>
                     <button
                         className={`px-8 py-3 rounded-full font-semibold shadow-md hover:scale-105 transition cursor-pointer
-                    ${theme === "dark"
+                        ${theme === "dark"
                                 ? "bg-light text-dark"
                                 : "bg-dark text-light"
                             }`}
@@ -82,7 +86,9 @@ export default function Navbar() {
                     } ${theme === "dark" ? "bg-bg-dark" : "bg-bg-light"}`}
             >
                 <ThemeToggle />
-                <Link to="https://github.com/razashaikh99" target="_blank">
+
+                {/* ✅ GitHub external link (mobile) */}
+                <a href="https://github.com/razashaikh99" target="_blank" rel="noopener noreferrer">
                     <button
                         className={`w-10 h-10 flex items-center justify-center font-bold rounded-full cursor-pointer text-lg transition-colors duration-300 hover:scale-105 ${theme === "dark"
                             ? "bg-light text-dark"
@@ -91,15 +97,19 @@ export default function Navbar() {
                     >
                         <FaGithub size={24} />
                     </button>
+                </a>
+
+                {/* ✅ Contact button (scroll to section, mobile) */}
+                <Link to="contact" smooth={true} duration={500}>
+                    <button
+                        className={`px-6 py-2 font-bold rounded-full cursor-pointer text-md transition-colors duration-300 hover:scale-105 ${theme === "dark"
+                            ? "bg-light text-dark"
+                            : "bg-[#0C0B11] text-light"
+                            }`}
+                    >
+                        Contact
+                    </button>
                 </Link>
-                <button
-                    className={`px-6 font-bold rounded-full cursor-pointer text-md transition-colors duration-300 hover:scale-105 ${theme === "dark"
-                        ? "bg-light text-dark"
-                        : "bg-[#0C0B11] text-light"
-                        }`}
-                >
-                    Contact
-                </button>
             </div>
         </nav>
     );
