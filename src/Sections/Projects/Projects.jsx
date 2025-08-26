@@ -1,10 +1,12 @@
 import { useContext, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import { FiExternalLink } from "react-icons/fi"; // 👈 Live Demo ke liye icon
-import { FaGithub } from "react-icons/fa"; // 👈 GitHub ke liye icon
-import NewHomeProject from "../../assets/images/project-01.png";
+import { FiExternalLink } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa";
 import QuizProject from "../../assets/images/react-quiz-project.png";
 import TicketProject from "../../assets/images/ticket-app.png";
+import NewHomeProject from "../../assets/images/new-home-project.png";
+import OlxProject from "../../assets/images/olx-project.png";
+import FacebookReplica from "../../assets/images/facebook-replica.png";
 
 const projects = [
   {
@@ -36,21 +38,21 @@ const projects = [
   },
   {
     id: 4,
-    title: "Portfolio Website",
-    description: "Personal portfolio to showcase my skills and projects.",
-    img: NewHomeProject,
+    title: "OLX Replica",
+    description: "A frontend practice project built with Tailwind CSS replicating OLX design and layout.",
+    img: OlxProject,
     tech: ["React", "Tailwind CSS"],
-    demoLink: "#",
-    codeLink: "#",
+    demoLink: "https://react-tailwind-olx-replica.vercel.app/",
+    codeLink: "https://github.com/razashaikh99/React-Tailwind-OLX-Replica",
   },
   {
     id: 5,
-    title: "E-Commerce App",
+    title: "Facebook Replica",
     description: "A fully functional e-commerce platform with cart and checkout.",
-    img: NewHomeProject,
-    tech: ["React", "Node.js", "MongoDB"],
-    demoLink: "#",
-    codeLink: "#",
+    img: FacebookReplica,
+    tech: ["React", "Tailwind CSS"],
+    demoLink: "https://react-tailwind-facebook-ui-replica.vercel.app/",
+    codeLink: "https://github.com/razashaikh99/React-Tailwind-Facebook-UI-Replica",
   },
 ];
 
