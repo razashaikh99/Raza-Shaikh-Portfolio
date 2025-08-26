@@ -8,8 +8,8 @@ export default function HeroSection() {
 
   return (
     <section
-      className={`px-5 sm:px-10 lg:px-32 mt-16 lg:mt-20 w-auto py-12 lg:py-24 flex flex-col-reverse lg:flex-row items-center justify-between transition-colors duration-300 
-    ${theme === "dark" ? "bg-[#0C0B11] text-light" : "bg-light text-dark"}
+      className={`px-5 sm:px-10 lg:px-32 mt-16 lg:mt-20 w-auto py-12 lg:py-24 flex flex-col-reverse lg:flex-row items-center justify-between transition-colors duration-300
+    ${theme === "dark" ? "bg-dark text-light" : "bg-light text-dark"}
   `}
     >
       {/* Left Section */}

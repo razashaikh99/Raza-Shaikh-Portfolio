@@ -6,9 +6,9 @@ body {
 
 @theme {
   --color-dark: #0C0B11;
-  --color-light: #FFFFFF;
-  --color-blue: #0061FF;
   --color-bg-dark: #110F18;
+  --color-light: #FFFFFF;
   --color-bg-light: #F7F7F7;
+  --color-blue: #0061FF;
 }
 

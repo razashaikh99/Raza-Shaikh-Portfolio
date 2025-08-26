@@ -27,7 +27,7 @@ export default function Home() {
       <Projects />
       <Contact />
       <Footer />
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
     </div>
   )
 }

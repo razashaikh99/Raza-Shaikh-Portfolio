@@ -92,7 +92,7 @@ export default function Navbar() {
                     <button
                         className={`w-10 h-10 flex items-center justify-center font-bold rounded-full cursor-pointer text-lg transition-colors duration-300 hover:scale-105 ${theme === "dark"
                             ? "bg-light text-dark"
-                            : "bg-[#0C0B11] text-light"
+                            : "bg-dark text-light"
                             }`}
                     >
                         <FaGithub size={24} />
@@ -104,7 +104,7 @@ export default function Navbar() {
                     <button
                         className={`px-6 py-2 font-bold rounded-full cursor-pointer text-md transition-colors duration-300 hover:scale-105 ${theme === "dark"
                             ? "bg-light text-dark"
-                            : "bg-[#0C0B11] text-light"
+                            : "bg-dark text-light"
                             }`}
                     >
                         Contact
