@@ -30,7 +30,9 @@ export default function AboutUs() {
         <div className="w-full flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12 lg:gap-25">
 
           {/* Left Side - Image */}
-          <div data-aos="flip-left" className="flex justify-center items-center">
+          <div
+            data-aos="flip-left"
+            className="flex justify-center items-center">
             <div className="relative w-48 sm:w-64 md:w-72 lg:w-80">
               <img
                 src={MyPhoto}
@@ -41,7 +43,9 @@ export default function AboutUs() {
           </div>
 
           {/* Right Side - Text */}
-          <div data-aos="fade-left" className="flex-1 text-center lg:text-left w-full px-4 lg:px-0">
+          <div
+            data-aos="fade-top"
+            className="flex-1 text-center lg:text-left w-full px-4 lg:px-0">
             <h3 className="text-xl sm:text-2xl font-bold mb-4">
               I'm Raza Shaikh
             </h3>

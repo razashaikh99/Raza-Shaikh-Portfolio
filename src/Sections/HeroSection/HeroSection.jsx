@@ -13,7 +13,9 @@ export default function HeroSection() {
   `}
     >
       {/* Left Section */}
-      <div data-aos="fade-right" className="flex-1 flex flex-col gap-5 text-center lg:text-left pt-6 md:pt-0">
+      <div
+        data-aos="fade-right"
+        className="flex-1 flex flex-col gap-5 text-center lg:text-left pt-6 md:pt-0">
         <p className="text-lg opacity-80">👋 Hello there...</p>
         <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
           I’m <span className="text-blue">Raza Shaikh</span>
@@ -49,7 +51,9 @@ export default function HeroSection() {
       </div>
 
       {/* Right Section (Image) */}
-      <div data-aos="flip-right" className="flex-1 flex justify-center lg:justify-end">
+      <div
+        data-aos="flip-right"
+        className="flex-1 flex justify-center lg:justify-end">
         <img
           src={MyPhoto}
           alt="Raza Shaikh"
