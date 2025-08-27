@@ -3,16 +3,34 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import DarkLogo from "../assets/images/dark-logo.png";
 import LightLogo from "../assets/images/light-logo.png";
 import { ThemeContext } from "../context/ThemeContext";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
+
+// SmartLink component
+function SmartLink({ to, children, ...props }) {
+  const isExternal = to.startsWith("http");
+
+  if (isExternal) {
+    return (
+      <RouterLink to={to} target="_blank" rel="noopener noreferrer" {...props}>
+        {children}
+      </RouterLink>
+    );
+  }
+
+  return (
+    <ScrollLink to={to} smooth={true} duration={500} {...props}>
+      {children}
+    </ScrollLink>
+  );
+}
 
 export default function Footer() {
   const { theme } = useContext(ThemeContext);
 
   return (
     <footer
-      className={`py-8 px-5 sm:px-10 md:20 lg:px-35  ${theme === "dark"
-        ? "bg-bg-dark text-gray-400"
-        : "bg-bg-light text-bg-dark"
+      className={`py-8 px-5 sm:px-10 md:20 lg:px-35 ${theme === "dark" ? "bg-bg-dark text-gray-400" : "bg-bg-light text-bg-dark"
         }`}
     >
       <div className="container">
@@ -28,53 +46,38 @@ export default function Footer() {
           {/* Quick Links */}
           <ul className="flex gap-6 text-sm">
             <li>
-              <Link to="about" smooth={true} duration={500} className="hover:text-blue-400 transition cursor-pointer">
+              <SmartLink className="hover:text-blue-400 transition cursor-pointer" to="about">
                 About
-              </Link>
+              </SmartLink>
             </li>
             <li>
-              <Link to="skills" smooth={true} duration={500} className="hover:text-blue-400 transition cursor-pointer">
+              <SmartLink className="hover:text-blue-400 transition cursor-pointer" to="skills">
                 Skills
-              </Link>
+              </SmartLink>
             </li>
             <li>
-              <Link to="projects" smooth={true} duration={500} className="hover:text-blue-400 transition cursor-pointer">
+              <SmartLink className="hover:text-blue-400 transition cursor-pointer" to="projects">
                 Projects
-              </Link>
+              </SmartLink>
             </li>
             <li>
-              <Link to="contact" smooth={true} duration={500} className="hover:text-blue-400 transition cursor-pointer">
+              <SmartLink className="hover:text-blue-400 transition cursor-pointer" to="contact">
                 Contact
-              </Link>
+              </SmartLink>
             </li>
           </ul>
 
           {/* Social Links */}
           <div className="flex gap-4 text-xl">
-            <Link
-              to="https://github.com/razashaikh99"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition cursor-pointer"
-            >
+            <SmartLink to="https://github.com/razashaikh99" className="hover:text-blue-400">
               <FaGithub />
-            </Link>
-            <Link
-              to="https://linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition cursor-pointer"
-            >
+            </SmartLink>
+            <SmartLink to="https://www.linkedin.com/in/muhammad-raza-shaikh-543a49380" className="hover:text-blue-400">
               <FaLinkedin />
-            </Link>
-            <Link
-              to="https://www.fiverr.com/razashaikh22"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition cursor-pointer"
-            >
+            </SmartLink>
+            <SmartLink to="https://www.fiverr.com/razashaikh22" className="hover:text-blue-400">
               <FaTwitter />
-            </Link>
+            </SmartLink>
           </div>
         </div>
 
