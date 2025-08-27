@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { TbBrandFiverr } from "react-icons/tb";
 import DarkLogo from "../assets/images/dark-logo.png";
 import LightLogo from "../assets/images/light-logo.png";
 import { ThemeContext } from "../context/ThemeContext";
@@ -76,7 +77,7 @@ export default function Footer() {
               <FaLinkedin />
             </SmartLink>
             <SmartLink to="https://www.fiverr.com/razashaikh22" className="hover:text-blue-400">
-              <FaTwitter />
+              <TbBrandFiverr />
             </SmartLink>
           </div>
         </div>
