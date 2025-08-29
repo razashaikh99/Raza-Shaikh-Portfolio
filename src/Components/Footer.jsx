@@ -73,7 +73,7 @@ export default function Footer() {
             <SmartLink to="https://github.com/razashaikh99" className="hover:text-blue-400">
               <FaGithub />
             </SmartLink>
-            <SmartLink to="https://www.linkedin.com/in/muhammad-raza-shaikh-543a49380" className="hover:text-blue-400">
+            <SmartLink to="http://www.linkedin.com/in/muhammad-raza-shaikh" className="hover:text-blue-400">
               <FaLinkedin />
             </SmartLink>
             <SmartLink to="https://www.fiverr.com/razashaikh22" className="hover:text-blue-400">
