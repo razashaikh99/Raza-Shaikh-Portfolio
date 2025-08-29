@@ -2,7 +2,7 @@ import MyPhoto from "../../assets/images/raza-shaikh3.jpg";
 import { ThemeContext } from "../../context/ThemeContext";
 import { MdEmail } from "react-icons/md";
 import { IoPersonSharp } from "react-icons/io5";
-import { FaGithub, FaMapMarkerAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
@@ -76,11 +76,18 @@ export default function AboutUs() {
                   <p>github.com/razashaikh99</p>
                 </Link>
               </div>
-              <div className="flex items-center gap-2 justify-center sm:justify-start sm:col-span-2">
+              <div className="flex items-center gap-2 justify-center sm:justify-start">
+                <FaLinkedin size={20} />
+                <Link to="https://www.linkedin.com/in/razashaikh99" target="_blank">
+                  <p>linkedin.com/in/razashaikh99</p>
+                </Link>
+              </div>
+              <div className="flex items-center gap-2 justify-center sm:justify-start">
                 <FaMapMarkerAlt size={20} />
                 <p>Karachi, Pakistan</p>
               </div>
             </div>
+
 
             {/* Button */}
             <div className="flex justify-center lg:justify-start">
