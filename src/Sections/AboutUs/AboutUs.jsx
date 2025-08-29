@@ -78,8 +78,8 @@ export default function AboutUs() {
               </div>
               <div className="flex items-center gap-2 justify-center sm:justify-start">
                 <FaLinkedin size={20} />
-                <Link to="https://www.linkedin.com/in/razashaikh99" target="_blank">
-                  <p>linkedin.com/in/razashaikh99</p>
+                <Link to="http://www.linkedin.com/in/muhammad-raza-shaikh" target="_blank">
+                  <p>linkedin.com/raza-shaikh</p>
                 </Link>
               </div>
               <div className="flex items-center gap-2 justify-center sm:justify-start">
