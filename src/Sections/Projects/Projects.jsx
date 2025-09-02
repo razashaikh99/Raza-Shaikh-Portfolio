@@ -7,10 +7,20 @@ import TicketProject from "../../assets/images/ticket-app.png";
 import NewHomeProject from "../../assets/images/new-home-project.png";
 import OlxProject from "../../assets/images/olx-project.png";
 import FacebookReplica from "../../assets/images/facebook-replica.png";
+import SigmaElement from "../../assets/images/sigma-element-project.png";
 
 const projects = [
   {
     id: 1,
+    title: "Sigma Element UI",
+    description: "A responsive UI for Sigma Element built with React and Tailwind CSS, featuring clean design and reusable components.",
+    img: SigmaElement,
+    tech: ["React", "Tailwind CSS", "AOS Animation"],
+    demoLink: "https://tailwind-element-sigma-ui.vercel.app/",
+    codeLink: "https://github.com/razashaikh99/tailwind-element-sigma-ui",
+  },
+  {
+    id: 2,
     title: "React Quiz App",
     description: "A dynamic quiz application built with React where users can answer multiple-choice questions and get instant feedback.",
     img: QuizProject,
@@ -19,7 +29,7 @@ const projects = [
     codeLink: "https://github.com/razashaikh99/React-Quiz-App",
   },
   {
-    id: 2,
+    id: 3,
     title: "Ticket Crud App",
     description: "A ticket booking assignment using MockAPI as backend simulation. Users can create, view, update, and delete tickets seamlessly.",
     img: TicketProject,
@@ -28,7 +38,7 @@ const projects = [
     codeLink: "https://github.com/razashaikh99/Mockapi-Ticket-Grand-Assignment",
   },
   {
-    id: 3,
+    id: 4,
     title: "New Home - Real Estate",
     description: "A responsive real estate platform showcasing property listings.",
     img: NewHomeProject,
@@ -37,7 +47,7 @@ const projects = [
     codeLink: "https://github.com/razashaikh99/New-Home-UI-Tailwind",
   },
   {
-    id: 4,
+    id: 5,
     title: "OLX Replica",
     description: "A frontend practice project built with Tailwind CSS replicating OLX design and layout.",
     img: OlxProject,
@@ -45,15 +55,7 @@ const projects = [
     demoLink: "https://react-tailwind-olx-replica.vercel.app/",
     codeLink: "https://github.com/razashaikh99/React-Tailwind-OLX-Replica",
   },
-  {
-    id: 5,
-    title: "Facebook Replica",
-    description: "A fully functional e-commerce platform with cart and checkout.",
-    img: FacebookReplica,
-    tech: ["React", "Tailwind CSS"],
-    demoLink: "https://react-tailwind-facebook-ui-replica.vercel.app/",
-    codeLink: "https://github.com/razashaikh99/React-Tailwind-Facebook-UI-Replica",
-  },
+  
 ];
 
 export default function Projects() {
