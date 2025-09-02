@@ -6,7 +6,6 @@ import QuizProject from "../../assets/images/react-quiz-project.png";
 import TicketProject from "../../assets/images/ticket-app.png";
 import NewHomeProject from "../../assets/images/new-home-project.png";
 import OlxProject from "../../assets/images/olx-project.png";
-import FacebookReplica from "../../assets/images/facebook-replica.png";
 import SigmaElement from "../../assets/images/sigma-element-project.png";
 
 const projects = [
