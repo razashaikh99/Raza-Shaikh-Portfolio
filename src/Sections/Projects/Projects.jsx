@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
+import AlBaytMart from "../../assets/images/albayt-mart.png";
 import QuizProject from "../../assets/images/react-quiz-project.png";
 import TicketProject from "../../assets/images/ticket-app.png";
 import NewHomeProject from "../../assets/images/new-home-project.png";
@@ -11,6 +12,15 @@ import SigmaElement from "../../assets/images/sigma-element-project.png";
 const projects = [
   {
     id: 1,
+    title: "AlBayt E-Commerce Website",
+    description: "A fully responsive ecommerce website built with React, featuring product listings, product details, cart management, and a clean modern UI for a smooth shopping experience.",
+    img: AlBaytMart,
+    tech: ["React", "Tailwind CSS", "JavaScript"],
+    demoLink: "https://al-bayt-mart.vercel.app/",
+    codeLink: "https://github.com/razashaikh99/AlBayt-Mart",
+  },
+  {
+    id: 2,
     title: "Sigma Element UI",
     description: "A responsive UI for Sigma Element built with React and Tailwind CSS, featuring clean design and reusable components.",
     img: SigmaElement,
@@ -19,7 +29,7 @@ const projects = [
     codeLink: "https://github.com/razashaikh99/tailwind-element-sigma-ui",
   },
   {
-    id: 2,
+    id: 3,
     title: "React Quiz App",
     description: "A dynamic quiz application built with React where users can answer multiple-choice questions and get instant feedback.",
     img: QuizProject,
@@ -28,7 +38,7 @@ const projects = [
     codeLink: "https://github.com/razashaikh99/React-Quiz-App",
   },
   {
-    id: 3,
+    id: 4,
     title: "Ticket Crud App",
     description: "A ticket booking assignment using MockAPI as backend simulation. Users can create, view, update, and delete tickets seamlessly.",
     img: TicketProject,
@@ -37,7 +47,7 @@ const projects = [
     codeLink: "https://github.com/razashaikh99/Mockapi-Ticket-Grand-Assignment",
   },
   {
-    id: 4,
+    id: 5,
     title: "New Home - Real Estate",
     description: "A responsive real estate platform showcasing property listings.",
     img: NewHomeProject,
@@ -46,7 +56,7 @@ const projects = [
     codeLink: "https://github.com/razashaikh99/New-Home-UI-Tailwind",
   },
   {
-    id: 5,
+    id: 6,
     title: "OLX Replica",
     description: "A frontend practice project built with Tailwind CSS replicating OLX design and layout.",
     img: OlxProject,
@@ -54,7 +64,7 @@ const projects = [
     demoLink: "https://react-tailwind-olx-replica.vercel.app/",
     codeLink: "https://github.com/razashaikh99/React-Tailwind-OLX-Replica",
   },
-  
+
 ];
 
 export default function Projects() {
