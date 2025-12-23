@@ -76,9 +76,9 @@ export default function Footer() {
             <SmartLink to="http://www.linkedin.com/in/muhammad-raza-shaikh" className="hover:text-blue-400">
               <FaLinkedin />
             </SmartLink>
-            <SmartLink to="https://www.fiverr.com/razashaikh22" className="hover:text-blue-400">
+            {/* <SmartLink to="https://www.fiverr.com/razashaikh22" className="hover:text-blue-400">
               <TbBrandFiverr />
-            </SmartLink>
+            </SmartLink> */}
           </div>
         </div>
 
