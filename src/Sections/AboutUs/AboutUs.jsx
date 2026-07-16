@@ -1,4 +1,4 @@
-import MyPhoto from "../../assets/images/raza-shaikh3.jpg";
+import MyPhoto from "../../assets/images/about-pic.jpeg";
 import { ThemeContext } from "../../context/ThemeContext";
 import { MdEmail } from "react-icons/md";
 import { IoPersonSharp } from "react-icons/io5";
@@ -47,13 +47,10 @@ export default function AboutUs() {
             data-aos="fade-top"
             className="flex-1 text-center lg:text-left w-full px-4 lg:px-0">
             <h3 className="text-xl sm:text-2xl font-bold mb-4">
-              I'm Raza Shaikh
+              I'm Muhammad Raza
             </h3>
             <p className="opacity-80 leading-relaxed mb-6 text-sm sm:text-base">
-              I specialize in building modern Mobile and Web Applications
-              tailored to client needs. From social platforms and quiz apps to
-              educational and custom solutions, I focus on creating
-              user-friendly, scalable, and impactful digital products.
+              I'm a Software Engineer with 1+ year of professional experience building modern web applications using React, TypeScript, Redux, and Firebase. I focus on developing scalable, responsive, and user-friendly solutions while writing clean, maintainable code and collaborating effectively within development teams.
             </p>
 
             {/* Info Grid */}
@@ -64,11 +61,11 @@ export default function AboutUs() {
               </div>
               <div className="flex items-center gap-2 justify-center sm:justify-start">
                 <IoPersonSharp size={20} />
-                <p>20 Yr</p>
+                <p>21 Yr</p>
               </div>
               <div className="flex items-center gap-2 justify-center sm:justify-start">
                 <FaPhone size={20} />
-                <p>+92323-3095007</p>
+                <p>+92316-2780185</p>
               </div>
               <div className="flex items-center gap-2 justify-center sm:justify-start">
                 <FaGithub size={20} />

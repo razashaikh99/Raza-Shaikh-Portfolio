@@ -3,7 +3,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import { FaHtml5, FaBootstrap, FaNode, FaReact } from "react-icons/fa";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
+import { SiFirebase, SiMongodb, SiRedux, SiTypescript } from "react-icons/si";
 
 export default function MySkills() {
   const { theme } = useContext(ThemeContext);
@@ -18,6 +18,9 @@ export default function MySkills() {
     { name: "Tailwind CSS", icon: <RiTailwindCssFill size={44} color="#38BDF8" /> },
     { name: "MongoDB", icon: <SiMongodb size={44} color="#55AD47" /> },
     { name: "Node.js", icon: <FaNode size={44} color="#58A149" /> },
+    { name: "TypeScript", icon: <SiTypescript size={44} color="#3178C6" /> },
+    { name: "Redux", icon: <SiRedux size={44} color="#764ABC" /> },
+    { name: "Firebase", icon: <SiFirebase size={44} color="#FFCA28" /> },
   ];
 
   return (

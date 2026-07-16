@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import MyPhoto from "../../assets/images/raza-shaikh3.jpg";
+import MyPhoto from "../../../src/assets/images/my-profile.jpeg";
 import { ThemeContext } from "../../context/ThemeContext";
 import { Link } from "react-scroll";
 
@@ -18,10 +18,10 @@ export default function HeroSection() {
         className="flex-1 flex flex-col gap-5 text-center lg:text-left pt-6 md:pt-0">
         <p className="text-lg opacity-80">👋 Hello there...</p>
         <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-          I’m <span className="text-blue">Raza Shaikh</span>
+          I’m <span className="text-blue">Muhammad Raza</span>
         </h1>
         <h2 className="text-2xl lg:text-3xl font-semibold">
-          I am <span className="text-blue font-bold">Frontend Developer</span>
+          Frontend Developer <span className="text-blue font-bold">@DigiTrends Pvt Ltd</span>
         </h2>
         <p className="text-base lg:text-lg opacity-80 max-w-lg mx-auto lg:mx-0">
           Passionate about building modern, responsive, and user-friendly web
@@ -53,7 +53,7 @@ export default function HeroSection() {
       {/* Right Section (Image) */}
       <div
         data-aos="flip-right"
-        className="flex-1 flex justify-center lg:justify-end">
+        className="flex justify-center lg:justify-end border-2 border-blue rounded-full p-1">
         <img
           src={MyPhoto}
           alt="Raza Shaikh"
