@@ -91,24 +91,27 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div data-aos="fade-up" className="pt-5 grid md:grid-cols-3 gap-8">
+        <div
+          data-aos="fade-up"
+          className="pt-5 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8"
+        >
           {visibleProjects.map((project) => (
             <div
               key={project.id}
-              className={`rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform ${theme === "dark"
-                ? "bg-dark border border-gray-700"
-                : "bg-gray-100 border border-gray-300"
+              className={`rounded-2xl shadow-lg overflow-hidden hover:scale-[1.02] transition-all duration-300 flex flex-col h-full ${theme === "dark"
+                  ? "bg-dark border border-gray-700"
+                  : "bg-gray-100 border border-gray-300"
                 }`}
             >
               {/* Project Image */}
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-48 object-cover rounded-t-2xl"
+                className="w-full h-52 sm:h-48 lg:h-52 object-cover rounded-t-2xl"
               />
 
               {/* Content */}
-              <div className="px-6 py-8">
+              <div className="px-6 py-6 flex flex-col flex-1">
                 <h3
                   className={`text-2xl font-semibold mb-3 ${theme === "dark" ? "text-white" : "text-gray-900"
                     }`}
@@ -116,7 +119,7 @@ export default function Projects() {
                   {project.title}
                 </h3>
                 <p
-                  className={`text-sm mb-4 ${theme === "dark" ? "text-gray-300" : "text-gray-700"
+                  className={`text-sm mb-4 flex-grow ${theme === "dark" ? "text-gray-300" : "text-gray-700"
                     }`}
                 >
                   {project.description}
@@ -140,12 +143,12 @@ export default function Projects() {
                 </div>
 
                 {/* Buttons */}
-                <div className="flex justify-between mt-4">
+                <div className="mt-auto flex w-full gap-3">
                   <a
                     href={project.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-blue rounded-full hover:bg-blue-700 text-sm text-white hover:scale-105 transition"
+                    className="w-full flex justify-center items-center gap-2 px-4 py-2 bg-blue rounded-full hover:bg-blue-700 text-sm text-white hover:scale-105 transition"
                   >
                     <FiExternalLink size={16} /> Live Demo
                   </a>
@@ -153,7 +156,7 @@ export default function Projects() {
                     href={project.codeLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm hover:scale-105 transition ${theme === "dark"
+                    className={`w-full flex justify-center items-center gap-2 px-4 py-2 rounded-full text-sm hover:scale-105 transition ${theme === "dark"
                       ? "bg-white hover:bg-gray-300 text-bg-dark"
                       : "bg-bg-dark hover:bg-dark text-white"
                       }`}
